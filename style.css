@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(219, 243, 243);
+    ;
+}
+
+#categories {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(33, 97, 114);
+    font-size: 24px;
+    font-style: normal;
+    list-style: none;
+}
+
+.ingredients-item {
+    align-content: center;
+    color: rgb(33, 97, 114);
+    font-size: 36px;
+}
+
+#ingredients {
+    color: rgb(33, 97, 114);
+    font-size: 24px;
+    font-style: normal;
+    margin-left: 65px;
+    list-style: symbols(■);
+}
+
+.gallery-item {
+    align-content: center;
+    color: rgb(33, 97, 114);
+    font-size: 36px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    list-style: none;
+}
+
+#counter {
+    margin-top: 50px;
+    margin-left: 65px;
+}
+
+.item-p {
+    color: rgb(202, 1, 1);
+    font-size: 36px;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.input-name {
+    margin-top: 5px;
+    color: rgb(93, 95, 95);
+    font-size: 16px;
+}
+
+#name-output {
+    color: rgb(33, 97, 114);
+    font-size: 36px;
+}
+
+.task-5 {
+    margin-top: 0;
+}
+
+
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+    border-color: #4caf50;
+}
+
+#validation-input.invalid {
+    border-color: #f44336;
+}
