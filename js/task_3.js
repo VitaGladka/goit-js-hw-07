@@ -33,9 +33,41 @@ const images = [
     },
 ]
 
-const inerPhoto = document.querySelector('.title')
-console.log(inerPhoto)
+// const inerPhoto = document.querySelector('.title')
+// console.log(inerPhoto)
+// const newOne = images.map(image => {
+//     return document.querySelector('.title').insertAdjacentHTML('beforeEnd', `<li><img src="${image.url}" alt="${image.alt}" width="600" height="350"></li>`);
+// })
 
-const newOne = images.map(image => {
-    return document.querySelector('.title').insertAdjacentHTML('beforeEnd', `<li><img src="${image.url}" alt="${image.alt}" width="600" height="350"></li>`);
-})
+
+const gallery = images.reduce(function(image, elem) {
+    const galleryElement = document.createElement('li');
+    return galleryElement.insertAdjacentHTML('beforeEnd', `<li><img src="${image.url}" alt="${image.alt}" width="600" height="350"></li>`);
+}, 0)
+console.log(gallery);
+gallery.append(...galleryItems);
+
+
+// images.reduce(function(промежуточный результат, элемент, индекс, массив) {
+// 	return новый промежуточный результат;
+// }, начальное значение);
+
+
+
+
+
+
+
+// const gallery = document.querySelector('#gallery');
+
+// const galleryItems = images.map(image => {
+//   const galleryElement = document.createElement('li');
+//   const galleryImage = document.createElement('img');
+//   galleryImage.src = image.url;
+//   galleryImage.alt = image.alt;
+//   galleryElement.appendChild(galleryImage);
+//   galleryElement.classList.add('gallery-item');
+//   return galleryElement;
+// });
+
+// gallery.append(...galleryItems);

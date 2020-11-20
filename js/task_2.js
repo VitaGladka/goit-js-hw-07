@@ -28,22 +28,10 @@ const ingredients = [
 ];
 
 const listItem = document.querySelector('#ingredients');
-
-let items = [];
-for (let i = 0; i < ingredients.length; i++) {
-  let newLi = document.createElement('li');
-  newLi.textContent = ingredients[i];
-  items.push(newLi);
-}
-
+const items = ingredients.map(ingredient => {
+  const item = document.createElement('li');
+  item.textContent = ingredient;
+  return item;
+});
 listItem.append(...items);
-
 console.log(listItem);
-
-
-
-
-
-
-
-
